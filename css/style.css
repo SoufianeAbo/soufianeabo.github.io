@@ -36,7 +36,7 @@ header{
 }
 
 .backcolor {
-	background: #6e54fa;
+	background: var(--main-color);
 }
 .logo{
 	font-size: 35px;
@@ -133,12 +133,15 @@ header.sticky{
 	margin-top: 5rem;
 }
 .container-box{
-	background: var(--bg-color);
 	border: 1px solid #f0eded;
 	padding: 50px 10px;
 	border-radius: 4px;
 	transition: all 1s ease 0s;
 	cursor: pointer;
+	border-radius: 53px;
+	background: #ffffff;
+	box-shadow:  5px 5px 10px #c2c0c0,
+				 -5px -5px 10px #ffffff;
 }
 
 .container {
@@ -181,6 +184,11 @@ header.sticky{
 	box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
 	border: 1px solid transparent;
 	transform: translateY(-3px);
+
+	border-radius: 53px;
+	background: #f0eded;
+	box-shadow:  5px 5px 10px #c2c0c0,
+				 -5px -5px 10px #ffffff;
 }
 
 .title{
@@ -190,6 +198,7 @@ header.sticky{
 	font-size: var(--h2-font);
 	line-height: 1.2;
 }
+
 .package-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -382,7 +391,7 @@ header.sticky{
 	text-align: center;
 }
 
-.contactus form input{
+.contactus form input, .contactus form textarea{
 	display: inline-block;
 	width: 100%;
 	padding: 20px 150px 20px 30px;
@@ -390,21 +399,8 @@ header.sticky{
 	outline: none;
 	border: none;
 	border-radius: 15px;
-}
-
-.contactus form textarea {
 	resize: none;
-	padding: 10px 10px;
-	border: none;
-	box-shadow: 5px 5px 10px rgb(85 85 85 / 20%);
-	padding: 20px 150px 20px 30px;
-	outline: none;
-	border-radius: 15px;
 }
-
-/* .newsletter table {
-	border-spacing: 10px;
-} */
 
 #contact{
 	background: var(--main-color);
@@ -434,9 +430,7 @@ header.sticky{
 	bottom: -10px;
 	background: var(--bg-color);
 }
-.list ul li:not(last-child) {
-	margin-bottom: 16px;
-}
+
 .list ul li a{
 	color: #ffffffbf;
 	font-size: var(--p-font);
@@ -562,5 +556,6 @@ header.sticky{
 		padding: 0;	
 		max-width: none;
 		width: 100%;
+		font-size: 15px;
 	}
 }
