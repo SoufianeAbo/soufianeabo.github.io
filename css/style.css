@@ -11,7 +11,7 @@
 	--bg-color: #fff;
 	--text-color: #221314;
 	--second-color: #5a7184;
-	--main-color: #6e54fa;
+	--main-color: #0081C3;
 	--big-font: 6rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
@@ -380,11 +380,21 @@ header.sticky{
 	margin-top: 120px;
 }
 
+.backimage {
+	background-image: url(/img/background.jpg);
+	background-size: cover;
+}
+
 .contactus form {
 	max-width: 100%;
 	width: 400px;
 	position: relative;
 	margin-left: 75%;
+	padding: 25px;
+	border-radius: 46px;
+	background: #ffffff;
+	box-shadow:  5px 5px 28px #bababa,
+				 -5px -5px 28px #ffffff;
 }
 
 .contactus h2 {
