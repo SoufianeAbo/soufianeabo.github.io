@@ -401,10 +401,21 @@ header.sticky{
 	text-align: center;
 }
 
-.contactus form input, .contactus form textarea{
+.contactus form input{
 	display: inline-block;
 	width: 100%;
 	padding: 20px 150px 20px 30px;
+	box-shadow: 5px 5px 10px rgb(85 85 85 / 20%);
+	outline: none;
+	border: none;
+	border-radius: 15px;
+	resize: none;
+}
+
+.contactus form textarea {
+	display: inline-block;
+	width: 100%;
+	padding: 20px 15px 20px 30px;
 	box-shadow: 5px 5px 10px rgb(85 85 85 / 20%);
 	outline: none;
 	border: none;
